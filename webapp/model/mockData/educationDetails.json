@@ -1,0 +1,51 @@
+{
+  "sap.card": {
+	"type": "Timeline",
+	"header": {
+	  "title": "Education Details",
+	    "icon": {
+		"src": "sap-icon://education"
+	  }
+	},
+	"content": {
+	  "data": {
+		"json": [
+		  {
+		  	"Title": "Higher Secondary",
+		  	"Description": "Kendriya Vidyalaya Old Cantt Allahabad",
+			"Icon": "sap-icon://e-learning",
+			"Time": "2009"
+		  	
+		  },
+		  {
+			"Title": "Senior Secondary",
+			"Description": "Kendriya Vidyalaya Old Cantt Allahabad",
+			"Icon": "sap-icon://e-learning",
+			"Time": "2011"
+		  },
+		  {
+			"Title": "Bachelor of Technology",
+			"Description": "Abdul Kalam Technical University, Uttar Pradesh",
+			"Icon": "sap-icon://study-leave",
+			"Time": "2012-2016"
+		  }
+		  
+		]
+	  },
+	  "item": {
+		"dateTime" : {
+		  "value": "{Time}"
+		},
+		"description" : {
+		  "value": "{Description}"
+		},
+		"title" : {
+		  "value": "{Title}"
+		},
+		"icon": {
+		  "src": "{Icon}"
+		}
+	  }
+	}
+  }
+}

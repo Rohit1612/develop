@@ -1,0 +1,70 @@
+{
+	"sap.app": {
+		"type": "card"
+	},
+	"sap.card": {
+	  "type": "List",
+	  "header": {
+		"title": "NetWeaver Gateway Client and ABAP Knowledge",
+		"icon": {
+		   "src": "sap-icon://database"
+		}
+	  },
+	  "content": {
+		"data": {
+		  "json": [
+			{
+			  "Name": "Knowledge of Gateway Client (OData)"
+			  
+			},
+			{
+			  "Name": "Knowledge of Creating oData Services and integrating it with UI5 Application"
+			  
+			},
+			{
+			  "Name": "Good knowlege of creating Association and Navigation"
+			 
+			},
+			{
+			  "Name": "Worked on Create Stream and Get Stream Methods for Attachments"
+			  
+			},
+			{
+			  "Name": "Knowledge of MPC and DPC classes of oData Services"
+			  
+			},
+			{
+			  "Name": "Knowledge of Registring and Activating OData Service"
+			 
+			},
+			{
+			  "Name": "Knowledge of Methods of OData(CRUD Operations and Function Imports)"
+			  
+			},
+			{
+			  "Name": "Good knowledge on ABAP Data Dictionary Objects "
+			  
+			},
+			{
+		   "Name" :	"Knowledge of debugging Gateway Service Builder"
+			},
+			{
+		   "Name" :	"Knowledge of SICF and RFC Connection "
+			}
+		
+		  ]
+		},
+		"item": {
+		  "icon": {
+			"src": "{icon}"
+		  },
+		  "title": {
+			"value": "{Name}"
+		  },
+		  "description": {
+			"value": "{Description}"
+		  }
+		}
+	  }
+	}
+}

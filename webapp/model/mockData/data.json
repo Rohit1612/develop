@@ -1,0 +1,26 @@
+{
+	"Rest": 	{
+		"name": "Rohit Shukla",
+		"flavour": "SAP UI5/Fiori Full Stack Developer",
+		"address": "MG ROAD, Kasta Park, Banglore",
+		"lati": "",
+		"longi": "",
+		"HeaderImageURL": "https://ak6.picdn.net/shutterstock/videos/1129396/thumb/1.jpg",
+		"image": "http://1.bp.blogspot.com/-cv_AqzoVnUA/TuZep5sZTXI/AAAAAAAAY08/rwbPj5vxEdA/s1600/Food+HD+Wallpapers.jpg",
+		"phone": "8601130587",
+		"rating": "2.0",
+		"distance": "1.1km",
+		"email": "rohitvolvo127@gmail.com",
+		"timeTable": "Mon-Fri 11 A.M to 9 P.M",
+		"amenity": "wi-fi, smoking zone, playground",
+		"cusine": "Mexican, Fast food",
+		"drink": "Beer, Wine",
+		"payment": "Cash, Card",
+		"picture": "3.5",
+		"Engg": "Bachleor of Technology",
+		"College": "Meerut Institute of Engineering and Technolgy with 75% Aggregate",
+		"Linkdin": "https://www.linkedin.com/in/rohit-shukla-74294b124/"
+		
+}
+
+}

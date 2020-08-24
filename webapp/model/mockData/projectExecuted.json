@@ -1,0 +1,51 @@
+{
+  "sap.card": {
+	"type": "Timeline",
+	"header": {
+	  "title": "Project Details",
+	    "icon": {
+		"src": "sap-icon://capital-projects"
+	  }
+	},
+	"content": {
+	  "data": {
+		"json": [
+		  {
+		  	"Name": "Madhya Pradesh ULB Automation",
+		  	"JobTitle": "",
+		  	"Description": "Urban Administration and Development Department is one of the governing body of Government of Madhya Pradesh for the purpose of planning and development of urban areas and civic governance. It handles the planning and development in urban and rural areas. The Project was to bring all Urban Local Bodies(ULB) in a single Platform.",
+			"Icon": "sap-icon://present",
+			"Time": "March 2017 - November 2018"
+		  	
+		  },
+		  {
+			"Name": "Hero MotoCorp Automation",
+			"JobTitle": "",
+			"Description": " Hero MotoCorp is an Indian motorcycle and scooter based in New Delhi, India. The company is largest two wheeler manufacture in the world. The Project is to automate all their regular work using SAP ERP Software and providing beautiful user experience via SAP Fiori.",
+			"Icon": "sap-icon://present",
+			"Time": "December 2018 - Ongoing"
+		  }
+		  
+		  
+		]
+	  },
+	  "item": {
+		"dateTime" : {
+		  "value": "{Time}"
+		},
+		"description" : {
+		  "value": "{Description}"
+		},
+		"owner" : {
+		  "value": "{Name}"
+		},
+		"title" : {
+		  "value": "{JobTitle}"
+		},
+		"icon": {
+		  "src": "{Icon}"
+		}
+	  }
+	}
+  }
+}

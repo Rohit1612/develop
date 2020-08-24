@@ -1,0 +1,75 @@
+{
+	"donut1": {
+		"sap.app": {
+			"type": "card"
+		},
+		"sap.card": {
+			"type": "Analytical",
+			"header": {
+				"title": "Development Tools",
+				"icon": {
+	          	"src": "sap-icon://inventory"
+	  }
+			},
+			"content": {
+				"chartType": "Donut",
+				"legend": {
+					"visible": false,
+					"position": "Top",
+					"alignment": "Center"
+				},
+				"plotArea": {
+					"dataLabel": {
+						"visible": true,
+						"showTotal": true
+					}
+				},
+				"title": {
+					"text": "Donut chart",
+					"visible": false,
+					"alignment": "Bottom"
+				},
+				"measureAxis": "size",
+				"dimensionAxis": "color",
+				"data": {
+					"json": {
+						"milk": [
+							{
+								
+								"Revenue": 45,
+								"toolname": "Web IDEs"
+								
+							},
+							{
+								
+								"Revenue": 45,
+								"toolname": "Eclipse"
+							},
+							{
+								
+								"Revenue": 10,
+								"toolname": "Others"
+							}
+							
+						]
+					},
+					"path": "/milk"
+				},
+				"dimensions": [
+					{
+						"label": "Webide",
+						"value": "{toolname}"
+					}
+				
+				],
+				"measures": [
+					{
+						"label": "Eclipse",
+						"value": "{Revenue}"
+					}
+				]
+			}
+		}
+	}
+
+}

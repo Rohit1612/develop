@@ -1,0 +1,63 @@
+{
+	"sap.app": {
+		"type": "card"
+	},
+	"sap.card": {
+		"type": "List",
+		"header": {
+			"title": "Awards & Achievements",
+			 "icon": {
+	    	"src": "sap-icon://badge"
+	      },
+			"actions": [
+				{
+					"type": "Navigation",
+					"parameters": {
+						"url": "/quickLinks"
+					}
+				}
+			]
+		},
+		"content": {
+			"data": {
+				"json": [
+					{
+						"Name": "Cerificate of Appreciation from HR",
+						"icon": "sap-icon://thumb-up",
+						"url": "/image/Github"
+					},
+					{
+						"Name": "Divisional Lead to direct a group of 20 people",
+						"icon": "sap-icon://thumb-up"
+					},
+					{
+						"Name": "Certificate of Placement Coordinator",
+						"icon": "sap-icon://thumb-up",
+						"url": ""
+					}
+					
+				]
+			},
+			"item": {
+				"icon": {
+					"src": "{icon}"
+				},
+				"title": {
+					"value": "{Name}"
+				},
+				"description": {
+					"value": "{Description}"
+				},
+				"actions": [
+					{
+						"type": "Navigation",
+						"enabled": "{= ${url}}",
+						"parameters": {
+							"url": "{url}"
+						}
+					}
+				]
+			}
+		}
+	}
+}

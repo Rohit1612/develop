@@ -1,0 +1,68 @@
+{
+	"sap.app": {
+		"type": "card"
+	},
+	"sap.card": {
+	  "type": "List",
+	  "header": {
+		"title": "SAP UI5/FIORI and Cloud Platform Knowledge",
+		"icon": {
+		   "src": "sap-icon://tag-cloud-chart"
+		}
+	  },
+	  "content": {
+		"data": {
+		  "json": [
+			{
+			  "Name": "Knowledge in developing Custom/Standar SAP UI5 Application"
+			  
+			},
+			{
+			  "Name": "Sound Knowledge of Cloud Platform and its Services"
+			  
+			},
+			{
+			  "Name": "Knowledge of Fragments and i18n file (Internationalization)"
+			  
+			},
+			{
+			  "Name": "Knowledge of Cloud Tools Like WEB IDE Full Stack, Build.me etc"
+			 
+			},
+			{
+			  "Name": "Knowledge of extending Standard UI5 Application using Fiori Maintenance "
+			  
+			},
+			{
+			  "Name": "Knowledge of Groups, Cataloge, Tiles, Roles etc "
+			  
+			},
+			{
+		   "Name" :	"Knowledge of Deploying application to Fiori Launchpad (LPD_CUST and /UI2/SEMOBJ T-code)"
+			},
+			{
+		   "Name" :	"Worked on Fiori Elements and oData Annotation"
+			},
+				{
+		   "Name" :	"Familier with concept of Mockserver, Launchpad Sandbox, Grunt.js"
+			},
+				{
+		   "Name" :	"Created Andriod and IOS Application from Fiori Using HAT Services"
+			}
+			
+		  ]
+		},
+		"item": {
+		  "icon": {
+			"src": "{icon}"
+		  },
+		  "title": {
+			"value": "{Name}"
+		  },
+		  "description": {
+			"value": "{Description}"
+		  }
+		}
+	  }
+	}
+}

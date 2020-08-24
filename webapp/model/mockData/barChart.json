@@ -1,0 +1,121 @@
+{
+	
+	"stackedBar": {
+		"sap.app": {
+			"type": "card"
+		},
+		"sap.card": {
+			"type": "Analytical",
+			"header": {
+				"title": "SAP Skill Set",
+				"icon": {
+	          	"src": "sap-icon://activity-assigned-to-goal"
+	  }
+			},
+			"content": {
+				"chartType": "StackedBar",
+				"legend": {
+					"visible": true,
+					"position": "Bottom",
+					"alignment": "Center"
+				},
+				"plotArea": {
+					"dataLabel": {
+						"visible": true,
+						"showTotal": false
+					},
+					
+					"categoryAxisText": {
+						"visible": false
+					},
+					"valueAxisText": {
+						"text": "Value Axis text"
+					}
+				},
+				"title": {
+					"text": "",
+					"visible": true,
+					"alignment": "Bottom"
+				},
+				
+				"measureAxis": "valueAxis",
+				"dimensionAxis": "categoryAxis",
+				"data": {
+					"json": {
+						"list": [
+							{
+								"Week": "SAP UI5",
+								"Skills": 10
+							},
+							{
+								"Week": "Fiori Launhpad",
+								"Skills": 10
+							},
+								{
+								"Week": "Java Script",
+								"Skills": 10
+							},
+								{
+								"Week": "HTML",
+								"Skills": 9
+							},
+								{
+								"Week": "CSS",
+								"Skills": 10
+							},
+								{
+								"Week": "XML",
+								"Skills": 10
+							},
+								{
+								"Week": "jQuery",
+								"Skills": 8
+							},
+								{
+								"Week": "JSON",
+								"Skills": 10
+							},
+								{
+								"Week": "Cloud Services",
+								"Skills": 8
+							},
+								{
+								"Week": "Grunt.js",
+								"Skills": 9
+							},
+								{
+								"Week": "Node.js",
+								"Skills": 7
+							},
+							{
+								"Week": "ABAP",
+								"Skills": 6
+							},
+							{
+								"Week": "Theme Designer",
+								"Skills": 8
+							}
+							
+						
+							
+							
+						]
+					},
+					"path": "/list"
+				},
+				"dimensions": [
+					{
+						"label": "Weeks",
+						"value": "{Week}"
+					}
+				],
+				"measures": [
+					{
+						"label": "Skills",
+						"value": "{Skills}"
+					}
+				]
+			}
+		}
+	}
+}

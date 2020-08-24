@@ -1,0 +1,147 @@
+<mvc:View controllerName="Goal.MyResume.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:t="sap.suite.ui.commons" xmlns:l="sap.ui.layout" xmlns:ap="sap.uxap" xmlns:c="sap.ui.commons" xmlns:f="sap.f"
+	xmlns:w="sap.ui.integration.widgets" xmlns:viz="sap.viz.ui5.controls" xmlns:s="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="My Profile">
+					<content>
+						<ap:ObjectPageLayout id="idObj" showEditHeaderButton="false" editHeaderButtonPress="handleEditBtnPress" enableLazyLoading="false"
+							showTitleInHeaderContent="true" subSectionLayout="TitleOnLeft" showHeaderContent="true">
+							<ap:headerTitle>
+								<ap:ObjectPageHeader objectImageShape="Circle" objectImageURI="resources/image/Rohit2.jpg" objectTitle="{/Rest/name}"
+									objectImageAlt="Rohit Shukla" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true"
+									isActionAreaAlwaysVisible="true" headerDesign="Light">
+									<ap:actions>
+										<ap:ObjectPageHeaderActionButton icon="resources/image/Linkdin.png" press="onLinkdinPress" type="Emphasized" tooltip="Linkdin"/>
+										<ap:ObjectPageHeaderActionButton icon="resources/image/Twitter.png" press="onTwitterPress" type="Emphasized" tooltip="Twitter"/>
+										<ap:ObjectPageHeaderActionButton icon="resources/image/Github.png" press="onGithubPress" tooltip="Github"/>
+										<ap:ObjectPageHeaderActionButton icon="sap-icon://download" press="onResumePress" tooltip="Download"/>
+									</ap:actions>
+								</ap:ObjectPageHeader>
+							</ap:headerTitle>
+							<ap:headerContent>
+								<l:VerticalLayout>
+									<ObjectStatus text="{/Rest/flavour}"/>
+									<Link text="{/Rest/phone}" press="onMobilePress"/>
+									<Link text="{/Rest/email}" press="onEmailPress"/>
+									<ObjectStatus text="{phone}"/>
+									<!--<RatingIndicator id="van2" maxValue="5" value="{path: 'rating', 
+						                                            formatter: '.getRating' }"
+						                                            iconSize="22px"/>-->
+								</l:VerticalLayout>
+								<FlexBox direction="Column" alignItems="Start">
+									<items>
+										<Title text="Languages" level="H1"/>
+										<HBox alignContent="Center">
+											<ObjectStatus text="Hindi"/>
+											<RatingIndicator id="van3" maxValue="5" iconSize="20px" value="5" editable="false"/>
+										</HBox>
+										<HBox>
+											<ObjectStatus text="English"/>
+											<RatingIndicator id="van4" maxValue="5" iconSize="20px" value="4.5" editable="false"/>
+										</HBox>
+									</items>
+								</FlexBox>
+								<FlexBox direction="Column" alignItems="Start">
+									<items>
+										<Title text="Hobbies" level="H1"/>
+										<ObjectStatus text="Singing and Playing"/>
+										<ObjectStatus text="Fitness"/>
+										<ObjectStatus text="Reading Novels"/>
+									</items>
+								</FlexBox>
+								<FlexBox direction="Column" alignItems="Start">
+									<items>
+										<Title text="Strength" level="H1"/>
+										<ObjectStatus text="Approachable"/>
+										<ObjectStatus text="Self-Starter"/>
+										<ObjectStatus text="Optimistic"/>
+									</items>
+								</FlexBox>
+								<FlexBox direction="Column" alignItems="Start">
+									<items>
+										<Title text="Address" level="H1"/>
+										<ObjectStatus text="168/A/1 Teliyerganj,"/>
+										<ObjectStatus text="Allahabad, Uttar Pradesh"/>
+										<ObjectStatus text="Pin-211004"/>
+									</items>
+								</FlexBox>
+								<Text
+									text="To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization. Having rich expeience of 3.5 years in SAP UI5/Fiori and Netweaver Gateway."/>
+							</ap:headerContent>
+							<ap:sections>
+								<ap:ObjectPageSection title="{i18n>XTIT_pExp}">
+									<ap:subSections>
+										<ap:ObjectPageSubSection >
+											<ap:blocks>
+												<f:GridContainer class="sapUiSmallMargin">
+													<w:Card manifest="../webapp/model/mockData/ProffExpCloud.json">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData columns="6"/>
+														</w:layoutData>
+													</w:Card>
+													<w:Card manifest="../webapp/model/mockData/ProffExpGateway.json">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData columns="6"/>
+														</w:layoutData>
+													</w:Card>
+												</f:GridContainer>
+											</ap:blocks>
+										</ap:ObjectPageSubSection>
+									</ap:subSections>
+								</ap:ObjectPageSection>
+								<ap:ObjectPageSection title="{i18n>XTIT_Education}">
+									<ap:subSections>
+										<ap:ObjectPageSubSection >
+											<ap:blocks>
+												<f:GridContainer class="sapUiSmallMargin">
+													<w:Card manifest="../webapp/model/mockData/occupationUST.json">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData columns="3" rows="4"/>
+														</w:layoutData>
+													</w:Card>
+													<w:Card manifest="../webapp/model/mockData/projectExecuted.json">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData rows="5" columns="5"/>
+														</w:layoutData>
+													</w:Card>
+													<w:Card width="auto" columns="4" action="onAction" manifest="../webapp/model/mockData/award.json"></w:Card>
+												</f:GridContainer>
+											</ap:blocks>
+										</ap:ObjectPageSubSection>
+									</ap:subSections>
+								</ap:ObjectPageSection>
+								<ap:ObjectPageSection title="{i18n>XTIT_tSkills}">
+									<ap:subSections>
+										<ap:ObjectPageSubSection >
+											<ap:blocks>
+												<f:GridContainer class="sapUiSmallMargin">
+													<w:Card manifest="../webapp/model/mockData/educationDetails.json">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData columns="4"/>
+														</w:layoutData>
+													</w:Card>
+													<w:Card manifest="{CustomModel2>/stackedBar}">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData rows="5" columns="4"/>
+														</w:layoutData>
+													</w:Card>
+													<w:Card manifest="{CustomModel1>/donut1}">
+														<w:layoutData>
+															<f:GridContainerItemLayoutData columns="4"/>
+														</w:layoutData>
+													</w:Card>
+												</f:GridContainer>
+											</ap:blocks>
+										</ap:ObjectPageSubSection>
+									</ap:subSections>
+								</ap:ObjectPageSection>
+							</ap:sections>
+						</ap:ObjectPageLayout>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

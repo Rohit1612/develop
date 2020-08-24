@@ -1,0 +1,51 @@
+{
+  "sap.card": {
+	"type": "Timeline",
+	"header": {
+	  "title": "Organisational Highlight",
+	    "icon": {
+		"src": "sap-icon://customer-history"
+	  }
+	},
+	"content": {
+	  "data": {
+		"json": [
+		  {
+		  	"Name": "Stravis IT Solutions,",
+		  	"JobTitle": "SAP UI5/Fiori Developer",
+		  	"Description": "Gurgaon, Haryana,India",
+			"Icon": "sap-icon://present",
+			"Time": "December 2018 - Ongoing"
+		  	
+		  },
+		  {
+			"Name": "UST Global,",
+			"JobTitle": "Associate SAP UI5/Fiori Developer",
+			"Description": "Bhopal, Madhya Pradesh, India",
+			"Icon": "sap-icon://history",
+			"Time": "March 2017 - November 2018"
+		  }
+		  
+		  
+		]
+	  },
+	  "item": {
+		"dateTime" : {
+		  "value": "{Time}"
+		},
+		"description" : {
+		  "value": "{Description}"
+		},
+		"owner" : {
+		  "value": "{Name}"
+		},
+		"title" : {
+		  "value": "{JobTitle}"
+		},
+		"icon": {
+		  "src": "{Icon}"
+		}
+	  }
+	}
+  }
+}

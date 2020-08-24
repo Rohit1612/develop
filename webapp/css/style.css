@@ -1,0 +1,83 @@
+/* Enter your custom styles here */
+
+#loading {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3 !important;
+    background-color: white;
+}
+
+#loading figure {
+    width: 100%;
+    margin: 0;
+}
+
+#loading figure img {
+    margin: 10% auto 0;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+}
+
+.spinner {
+    margin: 10px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 2s infinite ease-in-out both;
+    -moz-animation: sk-bouncedelay 2s infinite ease-in-out both;
+    animation: sk-bouncedelay 2s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    -moz-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+    background: #212c64;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    -moz-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+    background: #212c64;
+}
+
+.spinner .bounce3 {
+    background: #212c64;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
